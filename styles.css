@@ -4456,3 +4456,12 @@ body[data-theme="pink"] .fashion-gallery button::before {
     background-repeat: no-repeat !important;
   }
 }
+
+/* Final layout width pass: widen the main content area while keeping the left archive rail responsive. */
+@media (min-width: 1181px) {
+  .shell {
+    width: min(1480px, calc(100% - clamp(300px, 22vw, 380px)));
+    margin-left: clamp(256px, 18vw, 336px);
+    margin-right: auto;
+  }
+}
